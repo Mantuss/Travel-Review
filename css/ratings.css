@@ -1,0 +1,143 @@
+
+
+.contain .text{
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+
+
+.contain .star-widget input{
+  display: none;
+}
+.rate-us{
+  float:left;
+  color: black;
+}
+.star-widget label{
+  font-size: 20px;
+  color: rgb(80, 77, 77);
+  padding-right: 10px;
+  padding-top: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: rgb(144, 47, 255)
+}
+input#rate-5:checked ~ label{
+  color: #57e32c;
+}
+input#rate-4:checked ~ label{
+    color: #b7dd29;
+  }
+  input#rate-3:checked ~ label{
+    color: #ffe234;
+  }
+  input#rate-2:checked ~ label{
+    color: #ffa534;
+  }
+  input#rate-1:checked ~ label{
+    color: #ff4545;
+  }
+
+
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: blue;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.reviewbtn{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+   height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+textarea:disabled{
+  background-color: #fff !important;
+}
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 20px;
+  }
+  
+  .checked {
+    color: orange !important;
+  }
+  
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+  }
+  
+  .middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  .rate {
+    display: inline;
+    position: absolute;
+    margin-top: -3px;
+    margin-left: -10px;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.formfev{
+  display:  inline;
+}
